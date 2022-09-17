@@ -1,0 +1,70 @@
+package kr.lim.test;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		// 객체의 선언
+		// 객체이름 이름;
+		
+		// 객체의 값 저장
+		// 이름 = 객체의 생성;
+		
+		// 객체의 생성자의 형태
+		// new 객체이름(인자) -> 객체를 생성
+		
+		// 스캐너는 사용자가 입력하는 값을 받음 System input
+		// System.out ( 콘솔 ) -> 콘솔.print(asd)
+		// System.in
+		
+		Scanner asd = new Scanner(System.in);
+		
+		// 변수의 선언
+		// 변수타입 변수이름;
+		// 변수의 값 저장
+		// 변수이름 = 값;
+		// 변수의 초기화 + 선언
+		// 변수타입 변수이름 = 값;
+		//String line = asd.nextLine(); //문자열을 가진 값
+		//int number1 = asd.nextInt();
+		
+		/*System.out.print("숫자 1을 입력하세요 :");
+		int number1 = asd.nextInt();
+		
+		System.out.print("숫자 2을 입력하세요 :");
+		int number2 = asd.nextInt();*/
+		
+		//System.out.print("두 수의 합은= " + (number1 + number2));
+		
+		// format ( 형식 문자를 통해 변수를 표현하는 것)
+		// %s - 문자열
+		// %c - 문자
+		// %d - 정수
+		// %f - 실수
+		// System.out.printf
+		//System.out.printf("%d + %d = %d",number1, number2, number1 + number2);
+		//String output = String.format("%d + %d = %d",number1, number2, number1 + number2);
+		
+		System.out.print("숫자 1을 입력하세요 :");
+		String number1 = asd.nextLine();
+		
+		System.out.print("숫자 2을 입력하세요 :");
+		String number2 = asd.nextLine();
+		
+		//Integer.parseInt(number1); // int 값
+		// try catch
+		/* try {
+			실행할 코드
+		} catch(잡을에러) {
+			에러 발생시 실행할 코드
+		} */
+		try {
+			System.out.print(Integer.parseInt(number1) + Integer.parseInt(number2));
+		} catch(NumberFormatException e) {
+			System.out.print("숫자만 입력하세요");
+		}
+		System.out.print(Integer.parseInt(number1) + Integer.parseInt(number2));
+	}
+}
