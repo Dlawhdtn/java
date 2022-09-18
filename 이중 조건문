@@ -6,15 +6,15 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		// if(Á¶°Ç){
-		// 		°ıÈ£¾ÈÀÇ Á¶°ÇÀÌ ÂüÀÏ °æ¿ì, ½ÇÇàµÇ´Â ÄÚµå
+		// if(ì¡°ê±´){
+		// 		ê´„í˜¸ì•ˆì˜ ì¡°ê±´ì´ ì°¸ì¼ ê²½ìš°, ì‹¤í–‰ë˜ëŠ” ì½”ë“œ
 		// }
 		
-		// Á¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ 90Á¡ ÀÌ»óÀÌ¸éA
-		// 		    Á¡¼ö°¡ 80Á¡ ÀÌ»óÀÌ¸é B
-		//		    Á¡¼ö°¡ 70Á¡ ÀÌ»óÀÌ¸é C
-		//		    ÀÌ¿ÜÀÇ °æ¿ì D
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä :");
+		// ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ 90ì  ì´ìƒì´ë©´A
+		// 		    ì ìˆ˜ê°€ 80ì  ì´ìƒì´ë©´ B
+		//		    ì ìˆ˜ê°€ 70ì  ì´ìƒì´ë©´ C
+		//		    ì´ì™¸ì˜ ê²½ìš° D
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” :");
 		Scanner sc = new Scanner(System.in);
 		int grade;
 		grade = sc.nextInt();
@@ -29,9 +29,9 @@ public class Main {
 			System.out.println("D");
 		}
 		
-		// switch¹®
-		// switch (Á¶°Ç) {
-		//  case °ª:
+		// switchë¬¸
+		// switch (ì¡°ê±´) {
+		//  case ê°’:
 		//  	break;
 		// }
 		grade /= 10;
