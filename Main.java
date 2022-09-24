@@ -1,0 +1,43 @@
+package kr.lim.test;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		// 배열
+		// 변수의 묶음 or 객체의 묶음
+		int a = 5;
+		int b = 10;
+		int c = 15;
+		
+		// 변수타입 변수이름;
+		// int[] name = new int[3]; // name -> [int][int][int]
+		// name[0] = 5;
+		// name[1] = 10;
+		// name[2] = 15;
+		int[] name = { 5, 10, 15, 20, 25, 30 }; // name -> [5][10][15]
+		// 1차원 배열
+		int[] name1 = new int[3]; // name1 -> [][][]
+		name1 [0] = 5;
+		name1 [1] = 10;
+		name1 [2] = 15;
+		
+		// 다차원 배열
+		int[][] name2 = new int [5][3]; // name2 -> [int[3] [int[3]] [int[3]] [int[3]] [int[3]]
+		name2 [0][1] = 5; // 첫번째 열의 첫번째 숫자 5
+		name2 [1][2] = 10; // 두번째 열의 두번째 숫자 10
+		name2 [2][3] = 15; // 세번째 열의 세번째 숫자 15
+		
+		
+		// for(int i = 0; i < ?; i++) {}
+		// name 배열안의 원소를 하나하나 출력하고싶음.
+		// 해당 객체 변수 object 접근하고싶을 때,'.' 접근
+		for(int i = 0; i < name.length; i++) {
+			// name[0] -> 배열안의 0번째 원소의 값
+			// name[0] = 10;
+			System.out.println(name[" + i + "] = + name[i]);
+		}
+	} 
+}
