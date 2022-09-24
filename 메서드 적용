@@ -8,14 +8,14 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		// °´Ã¼ - Class - Object - Instance
+		// ê°ì²´ - Class - Object - Instance
 		// Person
-		// »ı¼ºÀÚ
-		// String s = "¹®ÀÚ¿­"
+		// ìƒì„±ì
+		// String s = "ë¬¸ìì—´"
 		Person p1 = new Person();
 		Person p2 = new Person();
-		p1.setName("È«±æµ¿1");
-		p2.setName("È«±æµ¿2");
+		p1.setName("í™ê¸¸ë™1");
+		p2.setName("í™ê¸¸ë™2");
 		
 		System.out.println(p1.getName());
 		System.out.println(p2.getName());
