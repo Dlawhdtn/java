@@ -9,7 +9,7 @@ public class Rectangle {
 		this.y = y;
 	}
 	public void printArea() {
-		System.out.println("»ç°¢ÇüÀÇ ³ĞÀÌ´Â :"+ (x*y));
+		System.out.println("Â»Ã§Â°Â¢Ã‡Ã¼Ã€Ã‡ Â³ÃÃ€ÃŒÂ´Ã‚ :"+ (x*y));
 	}
 	
 
