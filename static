@@ -8,14 +8,14 @@ public class Test2 {
 	//
 	// static
 	// Heap
-	// Stack -> Stack Over Flow (Stack ¿µ¿ªÀÇ ¹üÀ§¸¦ ÃÊ°úÇÑ µ¥ÀÌÅÍ¸¦ ³ÖÀ¸·Á ÇÒ ¶§)
+	// Stack -> Stack Over Flow (Stack ì˜ì—­ì˜ ë²”ìœ„ë¥¼ ì´ˆê³¼í•œ ë°ì´í„°ë¥¼ ë„£ìœ¼ë ¤ í•  ë•Œ)
 	//
 	
 	static int a = 10;
 	
-	public static void main(String[] args) { //¸ŞÀÎ ÇÔ¼ö
+	public static void main(String[] args) { //ë©”ì¸ í•¨ìˆ˜
 			
-		Triangle t1 = new Triangle(5, 10); //Áö¿ª °´Ã¼
+		Triangle t1 = new Triangle(5, 10); //ì§€ì—­ ê°ì²´
 		Triangle t2 = new Triangle(15, 25);
 		t1.printArea();
 		t2.printArea();
