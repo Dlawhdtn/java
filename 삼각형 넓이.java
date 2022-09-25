@@ -1,7 +1,7 @@
 package kr.lim.test.practice;
 public class Triangle {
-	// x ¹Øº¯
-	// y ³ôÀÌ
+	// x ë°‘ë³€
+	// y ë†’ì´
 	private int x, y;
 	
 	public Triangle(int x, int y) {
@@ -9,8 +9,8 @@ public class Triangle {
 		this.y = y;		
 	}
 	
-	// static ¿µ¿ª¾ÈÀÇ x y°ª¿¡ ÀÇÇØ °áÁ¤µÊ.
+	// static ì˜ì—­ì•ˆì˜ x yê°’ì— ì˜í•´ ê²°ì •ë¨.
 	public void printArea() {
-		System.out.println("»ï°¢ÇüÀÇ ³ĞÀÌ´Â :"+ (x*y/2));
+		System.out.println("ì‚¼ê°í˜•ì˜ ë„“ì´ëŠ” :"+ (x*y/2));
 	}
 }
