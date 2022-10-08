@@ -1,49 +1,57 @@
-package kr.lim.project;
+package kr.test;
 
-import kr.lim.project.abstract_.XY;
-import kr.lim.project.interface_.AllInterface;
-import kr.lim.project.interface_.Interface_;
-import kr.lim.project.interface_.NameInterface;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import kr.test.obj.Person;
 
 public class Main {
-
-	// class, interface, abstract class
-	// interface - implements (상속을 여러개 받을 수 있다.) [다중 상속]
-	//           - interface 끼리 상속이 가능하다. (extends)
-	// abstract class - extends
-	// implements
-	// design pattern ->
-	//					singleton pattern
 	
 	public static void main(String[] args) {
 		
-		// 정적메모리 -> static
+	// ArrayList 는 List(interface)를 구현한 구현체
+		List<Integer> list1 = new ArrayList();
 		
-		int a = 10; // stack -> 10 -> a (메모리 주소의 이름)
+		/*list1.add(5);  // 0 
+		list1.add(10); // 1
+		list1.add(15); // 2
+		list1.add(20); // 3
 		
-		// a = 10 ->
+		for(int i = 0; i < lis1t.size(); i++) {
+			System.out.println(list1.get(i));
+		}
 		
-		// 생성자를 호출하면 객체가 heap(동적 메모리) 영역안에 생성이 된다. 
-		// heap 영역안에 생성을 했다.
-				
-		Rectangle r1 = new Rectangle(15, 5);
-		Rectangle r2 = new Rectangle(15, 5);
+		//foreach -> 원소들을 순회하는 for문
+		for(Integer i : list1) {
+			System.out.println(i);
+		}
+		*/
+		// 시작점 시간저장 
+		for(int i = 0; i < 100; i++)
+			list1.add(i);
+		long start = System.nanoTime();
+		// 시간 체크
+		list1.remove(2);
+		long end = System.nanoTime();
 		
-		r1.setX(100);
+		System.out.println();
+		System.out.println("소요시간 : " + (end - start) +"ns");
+		System.out.println(list1);
 		
-		System.out.println("r1의 x :" + r1.getX());
-		System.out.println("r2의 x :" + r2.getX());
-		//System.out.println(r1.equals(r2));
+		List<Integer> list2 = new LinkedList();
 		
-		SingletonRectangle2 sr2 = SingletonRectangle2.getInstance();
-		SingletonRectangle2 sr1 = SingletonRectangle2.getInstance(10, 15);
+		for(int i = 0; i < 100; i++)
+			list2.add(i);
 		
-		System.out.println("sr1의 x :" + sr1.getX());
-		System.out.println("sr2의 x :" + sr2.getX());
-		sr1.setX(100);
-		System.out.println("sr1의 x :" + sr1.getX());
-		System.out.println("sr2의 x :" + sr2.getX());
-		//System.out.println(sr1.equals(sr2));
-		//System.out.println(i1.getName());
+		start = System.nanoTime();
+		// 시간 체크
+		list2.remove(2);
+		end = System.nanoTime();
+	
+		System.out.println();
+		System.out.println("소요시간 : " + (end - start) +"ns");
+		System.out.println(list2);
 	}
+
 }
