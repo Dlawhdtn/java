@@ -1,0 +1,30 @@
+package kr.lim;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// K - key (key로 사용할 타입)
+		// V - value (value의 타입)
+		Map<String, Integer> map = new HashMap();
+		
+		// 이름 -> 나이
+		map.put("임종수", 22);
+		map.put("하", 32);
+		map.put("자", 12);
+		
+		map.keySet()
+		.stream()
+		.sorted()
+		.forEach((key) -> System.out.println(map.get(key)));
+		
+		map.keySet()
+		.stream()
+		.filter((string) -> string.equals("하"))
+		.forEach((key) -> System.out.println(map.get(key)));
+	}
+}
+
