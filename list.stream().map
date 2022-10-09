@@ -1,0 +1,27 @@
+package kr.lim;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		List<Integer> list = new ArrayList();
+		
+		list.add(10);
+		list.add(12);
+		list.add(14);
+		
+		// T - Integer
+		// Stream<Integer> 였다가 -> .map(Function<T, R>)
+		// map함수에서 실수(Double)를 리턴했더니 apply함수의 리턴값은 R인데 R값이 Duble로 정해짐
+		// R - Double
+		// map의 return 타입은 Stream<R> -> Stream<Double>
+		list.stream().map((o) -> o + 1.5).forEach((o) -> System.out.println(o));
+		
+	}
+}
+
