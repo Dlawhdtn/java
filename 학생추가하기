@@ -10,7 +10,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-	// ArrayList ´Â List(interface)¸¦ ±¸ÇöÇÑ ±¸ÇöÃ¼
+	// ArrayList ëŠ” List(interface)ë¥¼ êµ¬í˜„í•œ êµ¬í˜„ì²´
 		List<Integer> list1 = new ArrayList();
 		
 		/*list1.add(5);  // 0 
@@ -22,21 +22,21 @@ public class Main {
 			System.out.println(list1.get(i));
 		}
 		
-		//foreach -> ¿ø¼ÒµéÀ» ¼øÈ¸ÇÏ´Â for¹®
+		//foreach -> ì›ì†Œë“¤ì„ ìˆœíšŒí•˜ëŠ” forë¬¸
 		for(Integer i : list1) {
 			System.out.println(i);
 		}
 		*/
-		// ½ÃÀÛÁ¡ ½Ã°£ÀúÀå 
+		// ì‹œì‘ì  ì‹œê°„ì €ì¥ 
 		for(int i = 0; i < 100; i++)
 			list1.add(i);
 		long start = System.nanoTime();
-		// ½Ã°£ Ã¼Å©
+		// ì‹œê°„ ì²´í¬
 		list1.remove(2);
 		long end = System.nanoTime();
 		
 		System.out.println();
-		System.out.println("¼Ò¿ä½Ã°£ : " + (end - start) +"ns");
+		System.out.println("ì†Œìš”ì‹œê°„ : " + (end - start) +"ns");
 		System.out.println(list1);
 		
 		List<Integer> list2 = new LinkedList();
@@ -45,12 +45,12 @@ public class Main {
 			list2.add(i);
 		
 		start = System.nanoTime();
-		// ½Ã°£ Ã¼Å©
+		// ì‹œê°„ ì²´í¬
 		list2.remove(2);
 		end = System.nanoTime();
 	
 		System.out.println();
-		System.out.println("¼Ò¿ä½Ã°£ : " + (end - start) +"ns");
+		System.out.println("ì†Œìš”ì‹œê°„ : " + (end - start) +"ns");
 		System.out.println(list2);
 	}
 
