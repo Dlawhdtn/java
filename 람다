@@ -1,0 +1,24 @@
+package kr.lim;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// stream (여러개의 원소들의 집합)
+		// collection (Arraylist, LinkedList, HashSet, Set, List ...)
+		
+		TestInterface in = (o) -> System.out.println("o");
+		
+		//Calc add = (x, y) -> x + y;
+		//System.out.println(add.calc(10, 20));
+		
+		test(12, 4, (x, y) -> x * y);
+	}
+	
+	public static void test(int x, int y, Calc calc) {
+		
+		System.out.println(calc.calc(x, y));
+		
+	}
+	
+}
+
