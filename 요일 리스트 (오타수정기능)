@@ -1,0 +1,40 @@
+package kr.lim;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// enum
+		List<String> days = new ArrayList();
+		
+		days.add("MON");
+		days.add("SUNk");
+		days.add("TUE");
+		
+		// Day.valueOf(String) -> Day
+		
+		// Stream<Day>
+		// o - type?
+		List<Day> list;
+		list = days
+			.stream() // Stream<String>
+			.map((s) -> {
+				Day day = Day.NONE;
+				try {
+					day = Day.valueOf(s);
+				} catch(Exception e) {}
+				return day;
+			}) 
+			.filter((o) -> o != Day.NONE)
+			.collect(Collectors.toList());
+		
+		System.out.println(list);
+	}
+}
+
