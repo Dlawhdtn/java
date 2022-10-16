@@ -1,19 +1,18 @@
-package kr.test.obj;
+package kr.lim.builder;
 
 public class Person {
-	
-	private int age;
 	private String name;
+	private String schoolName;
+	private int age;
+	private int height;
+	private int weight;
 	
-	public Person (String name, int age) {
+	Person(String name, String schoolName, int age, int height, int weight) {
 		this.name = name;
+		this.schoolName = schoolName;
 		this.age = age;
+		this.height = height;
+		this.weight = weight;
+		
 	}
-	public int getAge() {
-		return age;
-	}
-	public String getName() {
-		return name;
-	}
-	
 }
