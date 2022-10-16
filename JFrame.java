@@ -9,7 +9,7 @@ public class Main {
 	// arguments -> args
 	public static void main(String[] args) {
 	
-		MyFrame frame = new MyFrame(500, 500,"«œ¿Ã");
+		MyFrame frame = new MyFrame(500, 500,"√á√è√Ä√å");
 		
 	}
 }
