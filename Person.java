@@ -1,18 +1,29 @@
-package kr.lim.builder;
+package kr.lim;
 
 public class Person {
+
 	private String name;
-	private String schoolName;
 	private int age;
-	private int height;
-	private int weight;
-	
-	Person(String name, String schoolName, int age, int height, int weight) {
+	public Person(String name, int age) {
 		this.name = name;
-		this.schoolName = schoolName;
 		this.age = age;
-		this.height = height;
-		this.weight = weight;
-		
 	}
+	public Person(String data) {
+		// split - 문자열 가르기
+		String[] args = data.split(":");
+		// {"홍길동", "54"}
+		this.name = args[0];
+		// int -> Integer
+		this.age = Integer.parseInt(args[1]);
+	}
+	
+	public void printInformation() {
+		// 이름 12
+		System.out.println(name + " " + age);
+	}
+	
+	public String toString() {
+		return name + ":" + age;
+	}
+	
 }
